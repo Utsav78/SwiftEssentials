@@ -6,12 +6,7 @@ protocol FullyNamed {
 
 struct Person: FullyNamed {
     var fullName: String {
-        get {
-            return self
-        }
-        set {
-            self = newValue
-        }
+        
     }
     
 }
