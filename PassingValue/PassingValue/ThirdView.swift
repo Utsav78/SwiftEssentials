@@ -1,5 +1,5 @@
 //
-//  SecondView.swift
+//  ThirdView.swift
 //  PassingValue
 //
 //  Created by Utsav Budathoki on 17/4/2024.
@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct SecondView: View {
+struct ThirdView: View {
     @Binding var isShowingView: Bool
     var textToShow: String
     var body: some View {
-        Text("Passed Text:\(textToShow)")
+        Text("Passed Message from First View:\(textToShow)")
         Button {
             isShowingView = false
         } label: {
@@ -21,5 +21,5 @@ struct SecondView: View {
 }
 
 #Preview {
-    SecondView(isShowingView: .constant(true), textToShow: "I do not know")
+    ThirdView(isShowingView: .constant(true), textToShow: "Hello")
 }
